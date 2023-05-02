@@ -1,9 +1,9 @@
-import React from 'react'
 import ReactCardFlip from 'react-card-flip'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const SkillCard = (props) => {
     const [flip, setFlip] = useState(false);
+
     const flipHandler = () => {
         setFlip(!flip);
     };
@@ -23,7 +23,10 @@ export const SkillCard = (props) => {
                     src={props.imgSrc}
                     alt={props.imgAlt} />
             </div>
-            <div onClick={flipHandler}>
+            <div 
+            onClick={flipHandler}
+            className={`${props.divClassName} ${flip && "flipped"}`}>
+                <h3>Jessie can:</h3>
                 <ul>
                     {props.skillDesc.map(desc => <li>{desc}</li>)}
                 </ul>
