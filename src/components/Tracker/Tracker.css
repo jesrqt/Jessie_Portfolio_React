@@ -1,0 +1,127 @@
+/* Tracker below About Me */
+.tracker-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tracker-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .tracker {
+    max-width: 25%;
+    margin-top: 3rem;
+    display: flex;
+  }
+  
+  .tracker i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-right: 1rem;
+  }
+  
+  .tracker h3 {
+    color: var(--orange);
+    text-shadow: 0 0 5px var(--yellow);
+    margin: 0;
+  }
+  
+  .tracker p {
+    margin: 0;
+  }
+  
+  .tracker-description {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    padding-left: 2rem;
+  }
+  
+  @media only screen and (min-width: 760px) and (max-width: 1000px) {
+    .tracker-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .tracker {
+      min-width: 280px;
+      min-height: 120px;
+      margin: 0;
+    }
+  }
+  
+  @media only screen and (min-width: 510px) and (max-width: 760px) {
+    .tracker-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .tracker {
+      min-width: 203px;
+      min-height: 50px;
+      margin-top: 0;
+    }
+  
+    .tracker i {
+      font-size: 2rem;
+      color: var(--primary-color);
+    }
+  
+    .tracker-description {
+      padding-left: 1rem;
+    }
+  }
+  
+  @media only screen and (min-width: 440px) and (max-width: 510px) {
+    .tracker-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  
+    .tracker {
+      min-width: 175px;
+      min-height: 50px;
+      margin-top: 0;
+    }
+  
+    .tracker i {
+      font-size: 2rem;
+      color: var(--primary-color);
+    }
+  
+    .tracker-description {
+      padding-left: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 440px) {
+    .tracker-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-left: 4rem;
+    }
+  
+    .tracker {
+      min-width: 280px;
+      height: 80px;
+      margin-top: 0;
+    }
+  
+    .tracker i {
+      font-size: 2rem;
+      color: var(--primary-color);
+    }
+  
+    .tracker-description {
+      padding-left: 1rem;
+    }
+  }
