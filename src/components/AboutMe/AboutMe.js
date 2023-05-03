@@ -20,7 +20,6 @@ export const AboutMe = () => {
                             className="basic-button about-me-button"
                             href="#"
                             >Learn More</Button>
-                        <button className="basic-button about-me-button"><a href="#">Learn More</a></button>
                     </div>
                 </div>
             </div>

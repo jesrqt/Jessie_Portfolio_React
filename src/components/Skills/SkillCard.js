@@ -1,21 +1,24 @@
 import ReactCardFlip from 'react-card-flip'
-import { useEffect, useState } from 'react';
 
 export const SkillCard = (props) => {
-    const [flip, setFlip] = useState(false);
 
-    const flipHandler = () => {
-        setFlip(!flip);
+    const flipBack = () => {
+        props.onFlipBack(props.id);
     };
+
+    const flipFront = () => {
+        props.onFlipFront()
+    };
+
 
     return (
         <ReactCardFlip
-            isFlipped={flip}
+            isFlipped={props.flipped === props.id ? true : false}
             flipDirection="horizontal"
         >
             <div
+                onClick={flipBack}
                 className={props.divClassName}
-                onClick={flipHandler}
             >
                 <img
                     className={props.imgClassName}
@@ -23,12 +26,13 @@ export const SkillCard = (props) => {
                     src={props.imgSrc}
                     alt={props.imgAlt} />
             </div>
-            <div 
-            onClick={flipHandler}
-            className={`${props.divClassName} ${flip && "flipped"}`}>
+            <div
+                onClick={flipFront}
+                className={`${props.divClassName} ${props.flipped === props.id && "flipped"}`}
+            >
                 <h3>Jessie can:</h3>
                 <ul>
-                    {props.skillDesc.map(desc => <li>{desc}</li>)}
+                    {props.skillDesc.map(desc => <li key={Math.random()}>{desc}</li>)}
                 </ul>
             </div>
         </ReactCardFlip>

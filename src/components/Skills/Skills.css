@@ -19,10 +19,16 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.skills:hover {
+
+  box-shadow: 0 0 15px rgba(26, 138, 227, 0.5);
 }
 
 .flipped {
-  box-shadow: 0 0 15px 5px var(--yellow);
+  box-shadow: 0 0 15px var(--yellow);
 }
 
 section .skill-logo {

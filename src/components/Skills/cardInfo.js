@@ -1,6 +1,6 @@
 export const cardInfo = [
     {
-        id: 1,
+        id: "1",
         divClassName: "boxshadow skills",
         onClick: "htmlClickHandler",
         imgClassName: "skill-logo",
@@ -14,7 +14,7 @@ export const cardInfo = [
         ],
     },
     {
-        id: 2,
+        id: "2",
         divClassName: "boxshadow skills",
         onClick: "cssClickHandler",
         imgClassName: "skill-logo",
@@ -29,7 +29,7 @@ export const cardInfo = [
         ],
     },
     {
-        id: 3,
+        id: "3",
         divClassName: "boxshadow skills",
         onClick: "jsClickHandler",
         imgClassName: "skill-logo",
@@ -44,7 +44,7 @@ export const cardInfo = [
         ],
     },
     {
-        id: 4,
+        id: "4",
         divClassName: "boxshadow skills",
         onClick: "reactClickHandler",
         imgClassName: "skill-logo",
@@ -59,7 +59,7 @@ export const cardInfo = [
         ],
     },
     {
-        id: 5,
+        id: "5",
         divClassName: "boxshadow skills",
         onClick: "reduxClickHandler",
         imgClassName: "skill-logo",
@@ -74,7 +74,7 @@ export const cardInfo = [
         ],
     },
     {
-        id: 6,
+        id: "6",
         divClassName: "boxshadow skills",
         onClick: "gitClickHandler",
         imgClassName: "skill-logo",
