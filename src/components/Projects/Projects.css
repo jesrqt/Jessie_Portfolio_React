@@ -1,6 +1,6 @@
 /* Project Section */
 .project-section {
-    min-height: 500;
+    min-height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,8 +18,9 @@
 
 .card {
     min-width: 450px;
-    border-radius: 25px;
+    border-radius: 30px;
     background-color: #fff;
+    border: solid 3px var(--blue);
 }
 
 .image-content,
