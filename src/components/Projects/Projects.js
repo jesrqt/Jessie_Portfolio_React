@@ -51,7 +51,7 @@ export const Projects = () => {
                                                 reiciendis ducimus, fugit nobis consequatur laborum mollitia quod.</p>
                                             <Button
                                                 className="basic-button view-more-button"
-                                                href="#"
+                                                href="/"
                                             >View More</Button>
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@ export const Projects = () => {
 
                                             <Button
                                                 className="basic-button view-more-button"
-                                                href="#"
+                                                href="/"
                                             >View More</Button>
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@ export const Projects = () => {
                                                 reiciendis ducimus, fugit nobis consequatur laborum mollitia quod.</p>
                                             <Button
                                                 className="basic-button view-more-button"
-                                                href="#"
+                                                href="/"
                                             >View More</Button>
                                         </div>
                                     </div>
@@ -117,7 +117,7 @@ export const Projects = () => {
                                                 reiciendis ducimus, fugit nobis consequatur laborum mollitia quod.</p>
                                             <Button
                                                 className="basic-button view-more-button"
-                                                href="#"
+                                                href="/"
                                             >View More</Button>
 
                                         </div>

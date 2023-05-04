@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GrClose } from 'react-icons/gr';
+import { NavLink } from 'react-router-dom';
 import './NavBar.css';
 
 const getIsHamburger = () => window.innerWidth <= 1000;
@@ -29,10 +30,10 @@ export const NavBar = () => {
         return (
             <nav>
                 <div className="eighty-width nav-container">
-                    <a href="https://jessieinit.com/" id="logo">{'>'}_Jessie_in_IT</a>
+                    <NavLink to="/" id="logo">{'>'}_Jessie_in_IT</NavLink>
                     <ul>
                         <li>
-                            <a className="nav-link" href="https://jessieinit.com/">Home</a>
+                            <NavLink className="nav-link" to="/">Home</NavLink>
                         </li>
                         <li>
                             <a className="nav-link" href="#about-me">About Me</a>
@@ -47,7 +48,7 @@ export const NavBar = () => {
                             <a className="nav-link" href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a className="nav-link" href="#blog">Blog</a>
+                            <NavLink className="nav-link" to="/blog">Blog</NavLink>
                         </li>
                     </ul>
                 </div>
@@ -78,7 +79,7 @@ export const NavBar = () => {
 
                 <ul className={`menu ${isMenuVisible && "showMenu"}`}>
                     <li>
-                        <a className="menuItem" href="https://jessieinit.com/">Home</a>
+                        <NavLink className="menuItem" to="/">Home</NavLink>
                     </li>
                     <li>
                         <a className="menuItem" href="#about-me">About Me</a>
@@ -93,7 +94,7 @@ export const NavBar = () => {
                         <a className="menuItem" href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a className="menuItem" href="#blog">Blog</a>
+                        <NavLink className="menuItem" to="/blog">Blog</NavLink>
                     </li>
                 </ul>
             </Fragment>

@@ -18,7 +18,7 @@ export const AboutMe = () => {
                             forward to working with you!</p>
                             <Button
                             className="basic-button about-me-button"
-                            href="#"
+                            href="/"
                             >Learn More</Button>
                     </div>
                 </div>

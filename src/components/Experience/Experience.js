@@ -27,7 +27,7 @@ export const Experience = () => {
                                 </ul>
                                 <Button
                                 className="basic-button"
-                                href="#">Learn More</Button>
+                                href="/">Learn More</Button>
                             </div>
                         </div>
                         <div className="timeline-entry">

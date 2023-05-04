@@ -1,29 +1,24 @@
 import './App.css';
-import { Fragment } from 'react';
-import { NavBar } from './components/NavBar/NavBar';
-import { Hero } from './components/Hero/Hero';
-import { AboutMe } from './components/AboutMe/AboutMe';
-import { Tracker } from './components/Tracker/Tracker';
-import { Skills } from './components/Skills/Skills';
-import { Experience } from './components/Experience/Experience';
-import { Projects } from './components/Projects/Projects';
-import { Footer } from './components/Footer/Footer';
+import { Root } from './components/Root/Root';
+import { HomePage } from './components/HomePage/HomePage';
+import { BlogList } from './components/Blog/BlogList';
+import { BlogArticle } from './components/Blog/BlogArticle';
+import { BlogArticleNotFound } from './components/Blog/BlogArticleNotFound';
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from 'react-router-dom';
 
+// create router with JSX Route elements
+const appRouter = createBrowserRouter(createRoutesFromElements(
+  <Route path="/" element={<Root />}>
+    <Route index element={<HomePage />} />
+    <Route path="/blog" element={<BlogList />} />
+    <Route path="/blog/:title" element={<BlogArticle />} />
+    <Route path="/blog-title-not-found" element={<BlogArticleNotFound />} />
+  </Route>
+))
 
 function App() {
   return (
-    <Fragment>
-      <NavBar />
-      <Hero />
-      <section id="about-me">
-      <AboutMe />
-      <Tracker />
-      </section>
-      <Skills />
-      <Experience />
-      <Projects />
-      <Footer />
-    </Fragment>
+    <RouterProvider router={appRouter} />
   );
 }
 
