@@ -1,20 +1,23 @@
-import React, { useState } from 'react'
-import { BlogTitle } from './BlogTitle'
-import { BlogSearch } from './BlogSearch'
-import { BlogArticles } from './BlogArticles'
+import React from 'react';
+import { BlogTitle } from './BlogTitle';
+import { BlogSearch } from './BlogSearch';
+import { BlogArticles } from './BlogArticles';
+import { useLayoutEffect } from 'react';
+import './BlogList.css';
 
 export const BlogList = () => {
-    const [searchKey, setSearchKey] = useState("");
 
-    const updateSearchKey = (key) => {
-        setSearchKey(key);
-    };
+    //This makes sure that the page is always rendered at the top
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     return (
-        <div>
-            <BlogTitle />
-            <BlogSearch 
-            onUpdate={updateSearchKey}/>
+        <div className="bloglist-container">
+            <div className="blog-title-search-container">
+                <BlogTitle />
+                <BlogSearch />
+            </div>
             <BlogArticles />
         </div>
     )

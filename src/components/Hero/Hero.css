@@ -2,10 +2,11 @@
 main {
     display: flex;
     justify-content: center;
+    margin-top: 4.5rem;
   }
   
   .hero-container {
-    margin-top: 6rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
   }
@@ -29,7 +30,7 @@ main {
   .jessie-image {
     width: 50%;
     height: auto;
-    background-image: url("../../../public/image/Jessie_Hero.png");
+    background-image: url("/public/image/Jessie_Hero.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

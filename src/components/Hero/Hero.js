@@ -4,7 +4,7 @@ import { FiGithub } from 'react-icons/fi'
 
 export const Hero = () => {
     return (
-        <main>
+        <main id="home">
             <div className="eighty-width hero-container">
 
                 {/* Jessie Description */}
@@ -15,9 +15,10 @@ export const Hero = () => {
                         </h1>
                         <p>Welcome to my portfolio! Here, I demonstrate my technical skills as an aspiring front-end developer.</p>
                         <button className="github-button">
-                            <a href="https://github.com/jesrqt">
+                            <a href="https://github.com/jesrqt"
+                                target="_blank">
                                 <h4>Check my Github</h4>
-                                <FiGithub className="github-icon"/>
+                                <FiGithub className="github-icon" />
                             </a>
                         </button>
                     </div>

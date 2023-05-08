@@ -1,4 +1,8 @@
 /* Project Section */
+#projects {
+    margin-top: 5rem;
+}
+
 .project-section {
     min-height: 500px;
     display: flex;

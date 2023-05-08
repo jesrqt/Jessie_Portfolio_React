@@ -40,7 +40,7 @@ export const Projects = () => {
                                         <div className="image-content">
                                             <span className="overlay"></span>
                                             <div className="card-image">
-                                                <img src="../../../image/Project_Purrcolator.png"
+                                                <img src="/image/Project_Purrcolator.png"
                                                     alt="Web development project for an imaginary cat cafe called Purrcolator" className="card-img" />
                                             </div>
                                         </div>
@@ -62,7 +62,7 @@ export const Projects = () => {
                                         <div className="image-content">
                                             <span className="overlay"></span>
                                             <div className="card-image">
-                                                <img src="../../../image/Project_Fotomatic.png"
+                                                <img src="/image/Project_Fotomatic.png"
                                                     alt="Web development project for an imaginary cat cafe called Purrcolator" className="card-img" />
                                             </div>
                                         </div>
@@ -84,7 +84,7 @@ export const Projects = () => {
                                         <div className="image-content">
                                             <span className="overlay"></span>
                                             <div className="card-image">
-                                                <img src="../../../image/Project_CSS_Visual_Rules.png"
+                                                <img src="/image/Project_CSS_Visual_Rules.png"
                                                     alt="Web development project for an imaginary cat cafe called Purrcolator" className="card-img" />
                                             </div>
                                         </div>
@@ -106,7 +106,7 @@ export const Projects = () => {
                                         <div className="image-content">
                                             <span className="overlay"></span>
                                             <div className="card-image">
-                                                <img src="../../../image/Project_Tea_Cozy.png"
+                                                <img src="/image/Project_Tea_Cozy.png"
                                                     alt="Web development project for an imaginary cat cafe called Purrcolator" className="card-img" />
                                             </div>
                                         </div>

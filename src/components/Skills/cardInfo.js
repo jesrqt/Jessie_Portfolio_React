@@ -5,7 +5,7 @@ export const cardInfo = [
         onClick: "htmlClickHandler",
         imgClassName: "skill-logo",
         imgId: "html-logo",
-        imgSrc: "./image/Logo_HTML.png",
+        imgSrc: "/image/Logo_HTML.png",
         imgAlt: "HTML5 logo",
         skillDesc: [
             "use HTML to build a structure of a website",
@@ -19,7 +19,7 @@ export const cardInfo = [
         onClick: "cssClickHandler",
         imgClassName: "skill-logo",
         imgId: "css-logo",
-        imgSrc: "./image/Logo_CSS.png",
+        imgSrc: "/image/Logo_CSS.png",
         imgAlt: "CSS logo",
         skillDesc: [
             "style navigation elements (e.g. links, buttons, navigation bars)",
@@ -34,7 +34,7 @@ export const cardInfo = [
         onClick: "jsClickHandler",
         imgClassName: "skill-logo",
         imgId: "js-logo",
-        imgSrc: "./image/Logo_JavaScript.png",
+        imgSrc: "/image/Logo_JavaScript.png",
         imgAlt: "Javascript logo",
         skillDesc: [
             "style navigation elements (e.g. links, buttons, navigation bars)",
@@ -49,7 +49,7 @@ export const cardInfo = [
         onClick: "reactClickHandler",
         imgClassName: "skill-logo",
         imgId: "react-logo",
-        imgSrc: "./image/Logo_React.png",
+        imgSrc: "/image/Logo_React.png",
         imgAlt: "React logo",
         skillDesc: [
             "style navigation elements (e.g. links, buttons, navigation bars)",
@@ -64,7 +64,7 @@ export const cardInfo = [
         onClick: "reduxClickHandler",
         imgClassName: "skill-logo",
         imgId: "redux-logo",
-        imgSrc: "./image/Logo_Redux.png",
+        imgSrc: "/image/Logo_Redux.png",
         imgAlt: "Redux logo",
         skillDesc: [
             "style navigation elements (e.g. links, buttons, navigation bars)",
@@ -79,7 +79,7 @@ export const cardInfo = [
         onClick: "gitClickHandler",
         imgClassName: "skill-logo",
         imgId: "git-logo",
-        imgSrc: "./image/Logo_Git.png",
+        imgSrc: "/image/Logo_Git.png",
         imgAlt: "Git logo",
         skillDesc: [
             "style navigation elements (e.g. links, buttons, navigation bars)",

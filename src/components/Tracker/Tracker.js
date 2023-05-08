@@ -63,7 +63,7 @@ export const Tracker = () => {
                                 <CountUp
                                     start={0}
                                     end={5}
-                                    duration={3}
+                                    duration={5}
                                 />}
                         </h3>
                         <p>projects published</p>
@@ -77,7 +77,7 @@ export const Tracker = () => {
                                 <CountUp
                                     start={0}
                                     end={4}
-                                    duration={3}
+                                    duration={5}
                                 />}
                         </h3>
                         <p>years of professional experiences</p>

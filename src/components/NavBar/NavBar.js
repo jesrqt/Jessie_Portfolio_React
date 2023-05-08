@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GrClose } from 'react-icons/gr';
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './NavBar.css';
 
 const getIsHamburger = () => window.innerWidth <= 1000;
@@ -33,19 +34,29 @@ export const NavBar = () => {
                     <NavLink to="/" id="logo">{'>'}_Jessie_in_IT</NavLink>
                     <ul>
                         <li>
-                            <NavLink className="nav-link" to="/">Home</NavLink>
+                            <HashLink 
+                            className="nav-link" 
+                            smooth to="/#home">Home</HashLink>
                         </li>
                         <li>
-                            <a className="nav-link" href="#about-me">About Me</a>
+                            <HashLink 
+                            className="nav-link"
+                            smooth to="/#about-me" >About Me</HashLink>
                         </li>
                         <li>
-                            <a className="nav-link" href="#skills">Skills</a>
+                            <HashLink 
+                            className="nav-link"
+                            smooth to="/#skills">Skills</HashLink>
                         </li>
                         <li>
-                            <a className="nav-link" href="#experience">Experience</a>
+                            <HashLink 
+                            className="nav-link"
+                            smooth to="/#experience">Experience</HashLink>
                         </li>
                         <li>
-                            <a className="nav-link" href="#projects">Projects</a>
+                            <HashLink
+                            className="nav-link"
+                            smooth to="/#projects">Projects</HashLink>
                         </li>
                         <li>
                             <NavLink className="nav-link" to="/blog">Blog</NavLink>
@@ -79,19 +90,29 @@ export const NavBar = () => {
 
                 <ul className={`menu ${isMenuVisible && "showMenu"}`}>
                     <li>
-                        <NavLink className="menuItem" to="/">Home</NavLink>
+                        <HashLink 
+                        className="menuItem" 
+                        smooth to="/#home">Home</HashLink>
                     </li>
                     <li>
-                        <a className="menuItem" href="#about-me">About Me</a>
+                        <HashLink 
+                        className="menuItem"
+                        smooth to="/#about-me">About Me</HashLink>
                     </li>
                     <li>
-                        <a className="menuItem" href="#skills">Skills</a>
+                        <HashLink
+                        className="menuItem"
+                        smooth to="/#skills">Skills</HashLink>
                     </li>
                     <li>
-                        <a className="menuItem" href="#experience">Experience</a>
+                        <HashLink 
+                        className="menuItem"
+                        smooth to="/#experience">Experience</HashLink>
                     </li>
                     <li>
-                        <a className="menuItem" href="#projects">Projects</a>
+                        <HashLink 
+                        className="menuItem"
+                        smooth to="/#projects">Projects</HashLink>
                     </li>
                     <li>
                         <NavLink className="menuItem" to="/blog">Blog</NavLink>

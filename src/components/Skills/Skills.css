@@ -1,4 +1,8 @@
 /* Skills */
+#skills {
+  margin-top: 5rem;
+}
+
 .skill-card-container {
   display: flex;
   justify-content: center;

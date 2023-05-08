@@ -1,33 +1,43 @@
 import React from 'react'
-import { useState } from 'react';
+import { useRef } from 'react';
 import { BiSearchAlt } from 'react-icons/bi';
+import './BlogSearch.css';
+import { useNavigate, createSearchParams } from 'react-router-dom';
 
 export const BlogSearch = (props) => {
-    const [searchEntry, setSearchEntry] = useState("");
+    const navigate = useNavigate();
+    const searchInputRef = useRef();
 
     const submitHandler = (event) => {
         event.preventDefault();
-        props.onUpdate(searchEntry);
-    };
 
-    const searchKeyHandler = (event) => {
-        setSearchEntry(event.target.value);
+        // this makes the query search?title=searched_word
+        const searchQuery = {
+            title: searchInputRef.current.value
+        }
+        const query = createSearchParams(searchQuery);
+
+        // imperatively redirect with useNavigate() returned function
+        navigate({
+            //pathname is about where to redirect the user to
+            pathname: '/blog/search',
+            //query 
+            search: `?${query}`
+        })
     };
 
     return (
-        <div>
-            <form
-                onSubmit={submitHandler}>
-                <input
-                    type="text"
-                    maxlength="20"
-                    placeholder="Search blogs by keywords"
-                    onChange={searchKeyHandler}
-                    value={searchEntry}
-                />
-                <button
+        <form
+            className='search-bar'
+            onSubmit={submitHandler}>
+            <input
+                type="text"
+                maxlength="20"
+                placeholder="Search blogs by keywords"
+                ref={searchInputRef}
+            />
+            <button
                 type="submit"><BiSearchAlt /></button>
-            </form>
-        </div>
+        </form>
     )
 }

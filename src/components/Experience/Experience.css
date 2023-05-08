@@ -1,4 +1,8 @@
 /* Education & Experience */
+#experience {
+    margin-top: 5rem;
+}
+
 .timeline-section {
     display: flex;
     justify-content: center;
@@ -34,14 +38,14 @@
 }
 
 .uni-icon {
-    background-image: url("../../../public/image/Icon_certificate_512px_blue.png");
+    background-image: url("/public/image/Icon_certificate_512px_blue.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
 .work-icon {
-    background-image: url("../../../public/image/Icon_Working_512px_blue.png");
+    background-image: url("/public/image/Icon_Working_512px_blue.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
