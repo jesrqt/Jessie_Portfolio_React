@@ -13,10 +13,8 @@ export const Article = (props) => {
 
     useEffect(() => {
         const blogArticleData = blogData.filter(article => article.urlPath === urlName);
-        console.log(blogArticleData);
         setTitle(blogArticleData[0].title);
         setSubCategory(blogArticleData[0].subCategory);
-        console.log(subCategory);
         setContent(blogArticleData[0].content);
         setCoverPicture(blogArticleData[0].coverPicture);
         setCreatedDate(blogArticleData[0].createdDate);
