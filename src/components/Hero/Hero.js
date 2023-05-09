@@ -16,7 +16,8 @@ export const Hero = () => {
                         <p>Welcome to my portfolio! Here, I demonstrate my technical skills as an aspiring front-end developer.</p>
                         <button className="github-button">
                             <a href="https://github.com/jesrqt"
-                                target="_blank">
+                                target="_blank"
+                                rel="noreferrer">
                                 <h4>Check my Github</h4>
                                 <FiGithub className="github-icon" />
                             </a>
