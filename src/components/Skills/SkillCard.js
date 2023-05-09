@@ -13,9 +13,11 @@ export const SkillCard = (props) => {
 
 
     return (
+
         <ReactCardFlip
             isFlipped={props.flipped === props.id ? true : false}
             flipDirection="horizontal"
+            className="card-container"
         >
             <div
                 onClick={flipBack}
