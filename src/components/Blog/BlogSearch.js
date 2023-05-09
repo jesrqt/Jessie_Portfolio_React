@@ -30,14 +30,17 @@ export const BlogSearch = (props) => {
         <form
             className='search-bar'
             onSubmit={submitHandler}>
-            <input
-                type="text"
-                maxlength="20"
-                placeholder="Search blogs by keywords"
-                ref={searchInputRef}
-            />
-            <button
-                type="submit"><BiSearchAlt /></button>
+            <div className='input-button-container'>
+                <input
+                    type="text"
+                    minlength="2"
+                    maxlength="20"
+                    placeholder="Search blogs by keywords"
+                    ref={searchInputRef}
+                />
+                <button
+                    type="submit"><BiSearchAlt /></button>
+            </div>
         </form>
     )
 }

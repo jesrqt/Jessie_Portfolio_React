@@ -8,6 +8,7 @@ export const BlogArticle = (props) => {
       <div className="blog-cover-photo">
         <Link to={`/blog/${props.urlPath}`}>
         <img 
+        className='boxshadow'
         src={props.coverPicture}
         alt='impression of the article'/>
         </Link>

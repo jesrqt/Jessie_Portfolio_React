@@ -1,6 +1,5 @@
 import React from 'react'
 import './Experience.css';
-import { Button } from '../../UI/Button';
 
 export const Experience = () => {
     return (
@@ -25,9 +24,12 @@ export const Experience = () => {
                                         color theory, and accessible design</li>
                                     <li>Built multiple projects based on the above mentioned technologies</li>
                                 </ul>
-                                <Button
-                                className="basic-button"
-                                href="/">Learn More</Button>
+                                <button
+                                className="basic-button">
+                                    <a
+                                    href="https://join.codecademy.com/learn/paths/front-end-engineer-career-path-b/"
+                                    target="_blank"
+                                    rel="noreferrer">Learn More</a></button>
                             </div>
                         </div>
                         <div className="timeline-entry">

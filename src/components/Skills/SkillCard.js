@@ -1,4 +1,5 @@
-import ReactCardFlip from 'react-card-flip'
+import ReactCardFlip from 'react-card-flip';
+import './SkillCard.css';
 
 export const SkillCard = (props) => {
 
@@ -30,8 +31,8 @@ export const SkillCard = (props) => {
                 onClick={flipFront}
                 className={`${props.divClassName} ${props.flipped === props.id && "flipped"}`}
             >
-                <h3>Jessie can:</h3>
-                <ul>
+                <h3 id="skill-h3">Jessie can:</h3>
+                <ul id="skill-ul">
                     {props.skillDesc.map(desc => <li key={Math.random()}>{desc}</li>)}
                 </ul>
             </div>

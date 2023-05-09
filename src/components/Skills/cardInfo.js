@@ -10,7 +10,7 @@ export const cardInfo = [
         skillDesc: [
             "use HTML to build a structure of a website",
             "create tables",
-            "write cean and accessible HTML using semantic tags"
+            "write clean and accessible HTML using semantic tags"
         ],
     },
     {
@@ -22,9 +22,9 @@ export const cardInfo = [
         imgSrc: "/image/Logo_CSS.png",
         imgAlt: "CSS logo",
         skillDesc: [
-            "style navigation elements (e.g. links, buttons, navigation bars)",
-            "use Grid and Flexbox for layout",
-            "use media queries for responsiveness",
+            "use CSS to style navigation elements (e.g. links, buttons, navigation bars)",
+            "give clear structure using Grid and Flexbox",
+            "ensure responsive design for different media",
             "create multi-step animations"
         ],
     },
@@ -37,10 +37,12 @@ export const cardInfo = [
         imgSrc: "/image/Logo_JavaScript.png",
         imgAlt: "Javascript logo",
         skillDesc: [
-            "style navigation elements (e.g. links, buttons, navigation bars)",
-            "use Grid and Flexbox for layout",
-            "use media queries for responsiveness",
-            "create multi-step animations"
+            "use JavaScript to store and manipulate various types of data",
+            "create complex programs using arrays, loops, objects, and iterators",
+            "add interactive experiences to a website",
+            "implement classes, modules, and error handling",
+            "understand testing methodologies, such as TDD, using Mocha",
+            "connect to API to manupulate data on remote servers"
         ],
     },
     {
@@ -52,10 +54,10 @@ export const cardInfo = [
         imgSrc: "/image/Logo_React.png",
         imgAlt: "React logo",
         skillDesc: [
-            "style navigation elements (e.g. links, buttons, navigation bars)",
-            "use Grid and Flexbox for layout",
-            "use media queries for responsiveness",
-            "create multi-step animations"
+            "build dynamic React web apps using both class and function components",
+            "manipulate states, props, and hooks",
+            "connect to API to enable complex operations of a web app",
+            "This portfolio is made with React!"
         ],
     },
     {
@@ -67,10 +69,9 @@ export const cardInfo = [
         imgSrc: "/image/Logo_Redux.png",
         imgAlt: "Redux logo",
         skillDesc: [
-            "style navigation elements (e.g. links, buttons, navigation bars)",
-            "use Grid and Flexbox for layout",
-            "use media queries for responsiveness",
-            "create multi-step animations"
+            "understand Redux one-way dataflow",
+            "write immutable and pure functions to update stores",
+            "use Redux Toolkit for more succinct store management",
         ],
     },
     {
@@ -82,10 +83,11 @@ export const cardInfo = [
         imgSrc: "/image/Logo_Git.png",
         imgAlt: "Git logo",
         skillDesc: [
-            "style navigation elements (e.g. links, buttons, navigation bars)",
-            "use Grid and Flexbox for layout",
-            "use media queries for responsiveness",
-            "create multi-step animations"
+            "version control using Git",
+            "initiate, add, and commit git repository",
+            "push a commit to Github",
+            "pull requests on Github and collaborate with others",
+            "create a new branch, resolve a merge conflict, and merge a branch to its main"
         ],
     },
 ];

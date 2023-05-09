@@ -26,6 +26,7 @@
   min-height: 200px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 30px 50px;
   margin-left: 2rem;
 }
@@ -68,5 +69,6 @@
 
   .about-me-button {
     margin: 0 0 2rem 0;
+    width: 
   }
 }

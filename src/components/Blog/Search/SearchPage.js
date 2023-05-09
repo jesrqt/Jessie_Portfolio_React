@@ -23,22 +23,24 @@ export const SearchPage = () => {
                 <BlogTitle />
                 <BlogSearch />
                 <button className='basic-button'>
-                    <NavLink 
-                    to="/blog">Go back to the list</NavLink>
+                    <NavLink
+                        to="/blog">Go back to the list</NavLink>
                 </button>
             </div>
-            {
-                relevantArticles.map(article => <BlogArticle
-                    key={article.id}
-                    id={article.id}
-                    title={article.title}
-                    urlPath={article.urlPath}
-                    category={article.category}
-                    subCategory={article.subCategory}
-                    content={article.content}
-                    coverPicture={article.coverPicture}
-                    createdDate={article.createdDate} />)
-            }
+            <div className="blog-articles-container">
+                {
+                    relevantArticles.map(article => <BlogArticle
+                        key={article.id}
+                        id={article.id}
+                        title={article.title}
+                        urlPath={article.urlPath}
+                        category={article.category}
+                        subCategory={article.subCategory}
+                        content={article.content}
+                        coverPicture={article.coverPicture}
+                        createdDate={article.createdDate} />)
+                }
+            </div>
         </div>
     )
 }
