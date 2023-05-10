@@ -30,7 +30,7 @@ main {
   .jessie-image {
     width: 50%;
     height: auto;
-    background-image: url("/public/image/Jessie_Hero.png");
+    background-image: url("/public/image/Jessie_Hero.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
