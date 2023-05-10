@@ -5,7 +5,7 @@ import './Footer.css';
 
 export const Footer = () => {
   return (
-    <footer >
+    <footer>
       <div className='eighty-width'>
       <p><AiOutlineCopyrightCircle/> Copyright Jessie in IT 2023</p>
       </div>

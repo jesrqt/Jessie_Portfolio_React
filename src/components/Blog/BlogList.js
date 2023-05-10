@@ -14,11 +14,13 @@ export const BlogList = () => {
 
     return (
         <div className="bloglist-container">
+            <div className='bloglist-components-container'>
             <div className="blog-title-search-container">
                 <BlogTitle />
                 <BlogSearch />
             </div>
             <BlogArticles />
+            </div>
         </div>
     )
 }

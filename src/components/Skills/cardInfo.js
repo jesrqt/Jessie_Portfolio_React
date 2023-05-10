@@ -5,7 +5,7 @@ export const cardInfo = [
         onClick: "htmlClickHandler",
         imgClassName: "skill-logo",
         imgId: "html-logo",
-        imgSrc: "/image/Logo_HTML.png",
+        imgSrc: "/image/Logo_HTML.webp",
         imgAlt: "HTML5 logo",
         skillDesc: [
             "use HTML to build a structure of a website",
@@ -19,7 +19,7 @@ export const cardInfo = [
         onClick: "cssClickHandler",
         imgClassName: "skill-logo",
         imgId: "css-logo",
-        imgSrc: "/image/Logo_CSS.png",
+        imgSrc: "/image/Logo_CSS.webp",
         imgAlt: "CSS logo",
         skillDesc: [
             "use CSS to style navigation elements (e.g. links, buttons, navigation bars)",
@@ -34,7 +34,7 @@ export const cardInfo = [
         onClick: "jsClickHandler",
         imgClassName: "skill-logo",
         imgId: "js-logo",
-        imgSrc: "/image/Logo_JavaScript.png",
+        imgSrc: "/image/Logo_JavaScript.webp",
         imgAlt: "Javascript logo",
         skillDesc: [
             "use JavaScript to store and manipulate various types of data",
@@ -51,7 +51,7 @@ export const cardInfo = [
         onClick: "reactClickHandler",
         imgClassName: "skill-logo",
         imgId: "react-logo",
-        imgSrc: "/image/Logo_React.png",
+        imgSrc: "/image/Logo_React.webp",
         imgAlt: "React logo",
         skillDesc: [
             "build dynamic React web apps using both class and function components",
@@ -66,7 +66,7 @@ export const cardInfo = [
         onClick: "reduxClickHandler",
         imgClassName: "skill-logo",
         imgId: "redux-logo",
-        imgSrc: "/image/Logo_Redux.png",
+        imgSrc: "/image/Logo_Redux.webp",
         imgAlt: "Redux logo",
         skillDesc: [
             "understand Redux one-way dataflow",
@@ -80,7 +80,7 @@ export const cardInfo = [
         onClick: "gitClickHandler",
         imgClassName: "skill-logo",
         imgId: "git-logo",
-        imgSrc: "/image/Logo_Git.png",
+        imgSrc: "/image/Logo_Git.webp",
         imgAlt: "Git logo",
         skillDesc: [
             "version control using Git",
