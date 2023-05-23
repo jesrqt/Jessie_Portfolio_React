@@ -108,11 +108,7 @@ body {
 /* Media Query - 760px */
 @media only screen and (max-width: 760px) {
   .eighty-width {
-    width: 95%;
-  }
-
-  .boxshadow {
-    box-shadow: none;
+    width: 90%;
   }
 
   .basic-button {

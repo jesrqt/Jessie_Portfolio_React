@@ -8,15 +8,20 @@
   justify-content: center;
 }
 
-.skills-container {
+/* .skills-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 2rem;
+} */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .skills {
-  width: 350px;
   height: 320px;
   display: flex;
   flex-direction: column;
@@ -24,6 +29,28 @@
   align-items: center;
   cursor: pointer;
   transition: box-shadow 0.3s;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1000px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .skills {
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .skills {
+    height: 250px;
+  }
 }
 
 .skills:hover {
@@ -55,16 +82,3 @@ section #git-logo {
   min-width: 95px;
 }
 
-@media only screen and (max-width: 760px) {
-  .skills-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-
-  .skills {
-    box-shadow: 0 0 15px 5px rgba(121, 121, 121, 0.2);
-    border-radius: 30px;
-  }
-}
