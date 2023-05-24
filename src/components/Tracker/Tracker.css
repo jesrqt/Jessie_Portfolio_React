@@ -11,14 +11,14 @@
   
   .tracker {
     max-width: 25%;
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
   }
   
-  .tracker i {
-    font-size: 3rem;
+  .tracker-icon {
+    font-size: 2rem;
     color: var(--primary-color);
-    margin-right: 1rem;
+    margin: 0.5rem 0;
   }
   
   .tracker h3 {
@@ -34,94 +34,18 @@
   .tracker-description {
     display: flex;
     flex-direction: column;
-    height: 80px;
-    padding-left: 2rem;
+    align-items: center;
+    text-align: center;
   }
   
-  @media only screen and (min-width: 760px) and (max-width: 1000px) {
-    .tracker-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-  
+  @media only screen and (max-width: 760px) {
     .tracker {
-      min-width: 280px;
-      min-height: 120px;
-      margin: 0;
+      margin-top: 1rem;
     }
-  }
-  
-  @media only screen and (min-width: 510px) and (max-width: 760px) {
-    .tracker-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-  
-    .tracker {
-      min-width: 203px;
-      min-height: 50px;
-      margin-top: 0;
-    }
-  
+    
     .tracker i {
       font-size: 2rem;
       color: var(--primary-color);
     }
-  
-    .tracker-description {
-      padding-left: 1rem;
-    }
   }
   
-  @media only screen and (min-width: 440px) and (max-width: 510px) {
-    .tracker-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-  
-    .tracker {
-      min-width: 175px;
-      min-height: 50px;
-      margin-top: 0;
-    }
-  
-    .tracker i {
-      font-size: 2rem;
-      color: var(--primary-color);
-    }
-  
-    .tracker-description {
-      padding-left: 1rem;
-    }
-  }
-  
-  @media only screen and (max-width: 440px) {
-    .tracker-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      padding-left: 4rem;
-    }
-  
-    .tracker {
-      min-width: 280px;
-      height: 80px;
-      margin-top: 0;
-    }
-  
-    .tracker i {
-      font-size: 2rem;
-      color: var(--primary-color);
-    }
-  
-    .tracker-description {
-      padding-left: 1rem;
-    }
-  }

@@ -53,10 +53,14 @@ nav li:not(:last-child) {
 .hamburger {
   z-index: 100;
   cursor: pointer;
-  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   border: none;
   background-color: var(--orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hamburger:active {

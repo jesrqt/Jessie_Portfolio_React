@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import { BsPencil, BsBook } from 'react-icons/bs';
+import { AiOutlineCoffee } from 'react-icons/ai';
+import { MdOutlineWorkOutline } from 'react-icons/md';
 import './Tracker.css';
 
 
@@ -26,7 +29,6 @@ export const Tracker = () => {
         >
             <div className="eighty-width tracker-container">
                 <div className="tracker study-days">
-                    <i className="fa fa-pencil" aria-hidden="true"></i>
                     <div className="tracker-description">
                         <h3
                             id="studyDays"
@@ -35,51 +37,52 @@ export const Tracker = () => {
                                 <CountUp
                                     start={0}
                                     end={studyDays}
-                                    duration={5}
+                                    duration={4}
                                 />}
                         </h3>
+                        <BsPencil className='tracker-icon' />
                         <p>days studying to code</p>
                     </div>
                 </div>
                 <div className="tracker cups-of-coffee">
-                    <i className="fa fa-coffee" aria-hidden="true"></i>
                     <div className="tracker-description">
                         <h3 id="cupsOfCoffee">
                             {inView &&
                                 <CountUp
                                     start={0}
                                     end={cupsOfCoffee}
-                                    duration={5}
+                                    duration={4}
                                 />}
                         </h3>
+                        <AiOutlineCoffee className='tracker-icon' />
                         <p>cups of coffee</p>
                     </div>
                 </div>
                 <div className="tracker no-of-projects">
-                    <i className="fa fa-code" aria-hidden="true"></i>
                     <div className="tracker-description">
                         <h3 id="numberOfProjects">
                             {inView &&
                                 <CountUp
                                     start={0}
                                     end={5}
-                                    duration={5}
+                                    duration={4}
                                 />}
                         </h3>
+                        <BsBook className='tracker-icon' />
                         <p>projects published</p>
                     </div>
                 </div>
                 <div className="tracker prof-experience">
-                    <i className="fa fa-briefcase" aria-hidden="true"></i>
                     <div className="tracker-description">
                         <h3 id="yearsOfExper">
-                        {inView &&
+                            {inView &&
                                 <CountUp
                                     start={0}
                                     end={4}
-                                    duration={5}
+                                    duration={4}
                                 />}
                         </h3>
+                        <MdOutlineWorkOutline className='tracker-icon' />
                         <p>years of professional experiences</p>
                     </div>
                 </div>
