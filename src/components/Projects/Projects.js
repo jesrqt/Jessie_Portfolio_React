@@ -123,8 +123,8 @@ export const Projects = () => {
 
                                         <div className="card-content">
                                             <h3 className="project-name">Redux Webshop</h3>
-                                            <p className="project-description">Redux Webshop is build with React and Redux. Users can add or remove items in a shopping cart, which is automatically saved in a backend server in real time.
-                                                Through this project, Jessie demonstrates her ability to manage states using Redux and handle with API requests.</p>
+                                            <p className="project-description">Redux Webshop is built with React and Redux. Users can add or remove items in a shopping cart, which is automatically saved in a backend server in real time.
+                                                Through this project, Jessie demonstrates her ability to manage states using Redux and handle API requests.</p>
                                             <button className="project-button">
                                                 <a href="https://github.com/jesrqt/Redux_Webshop"
                                                     target="_blank"
