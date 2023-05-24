@@ -23,16 +23,26 @@ export const Projects = () => {
                                 effect={"coverflow"}
                                 grabCursor={true}
                                 centeredSlides={true}
-                                slidesPerView={"auto"}
+                                slidesPerView={1}
+                                spaceBetween={150}
                                 coverflowEffect={{
                                     rotate: 50,
-                                    stretch: 0,
+                                    stretch: 100,
                                     depth: 100,
                                     modifier: 1,
                                     slideShadows: false,
                                 }}
                                 pagination={true}
+                                initialSlide={1}
                                 modules={[EffectCoverflow, Pagination]}
+                                breakpoints={{
+                                    450: {
+                                        slidesPerView: 1.2,
+                                    },
+                                    600: {
+                                        slidesPerView: "auto",
+                                    }
+                                }}
                                 className="mySwiper"
                             >
 
@@ -125,8 +135,8 @@ export const Projects = () => {
                                             </button>
                                             <button className='project-button'>
                                                 <a href="https://main--wonderful-bavarois-996dde.netlify.app/"
-                                                target="_blank"
-                                                rel="noreferrer">
+                                                    target="_blank"
+                                                    rel="noreferrer">
                                                     <h4>Deployed Website</h4>
                                                 </a>
                                             </button>

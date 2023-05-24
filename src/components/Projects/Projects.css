@@ -10,6 +10,7 @@
     justify-content: center;
 }
 
+
 .slide-content {
     margin: 0 80px;
 }
@@ -18,10 +19,12 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
+    width: 100%;
 }
 
 .card {
-    min-width: 450px;
+    max-width: 450px;
+    width: auto;
     border-radius: 30px;
     background-color: #fff;
     border: solid 3px var(--blue);
@@ -114,36 +117,68 @@
     margin: 1rem 0;
 }
 
-  .project-button a {
+.project-button a {
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  .project-button h4 {
+}
+
+.project-button h4 {
     color: #fff;
     font-size: 1.1rem;
     font-weight: 600;
     margin: 0;
     padding: 0 1rem;
-  }
-  
-  .github-icon {
+}
+
+.github-icon {
     color: #fff;
     font-size: 2rem;
     margin: 0;
     padding-right: 1rem;
-  }
-  
-  .project-button:hover {
+}
+
+.project-button:hover {
     background-color: var(--blue);
     box-shadow: 0 15px 10px rgba(26, 138, 227, 0.5);
-  }
-  
-  .project-button:active {
+}
+
+.project-button:active {
     position: relative;
     top: 10px;
     box-shadow: 0 5px 10px rgba(26, 138, 227, 0.5);
-  }
-  
+}
+
+@media only screen and (max-width: 820px) {
+    .slide-content {
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .card-image {
+        height: 140px;
+        width: 150px;
+    }
+
+    /* .card-image = parent div, .card-img = child image */
+    .card-image .card-img {
+        height: 130px;
+        width: 140px;
+        border-radius: 10%;
+    }
+
+    .project-button h4 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0;
+        padding: 0 0.5rem;
+    }
+
+    .project-button {
+        width: 150px;
+        height: 3rem;
+        margin: 1rem 0;
+    }
+}
