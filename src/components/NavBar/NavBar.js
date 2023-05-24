@@ -5,15 +5,15 @@ import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './NavBar.css';
 
-const getIsHamburger = () => window.innerWidth <= 1000;
+const getHamburger = () => window.innerWidth <= 1000;
 
 export const NavBar = () => {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
-    const [isHamburgerMenu, setIsHamburgerMenu] = useState(getIsHamburger())
+    const [hamburgerMenu, setHamburgerMenu] = useState(getHamburger())
 
     useEffect(() => {
         const onResize = () => {
-            setIsHamburgerMenu(getIsHamburger())
+            setHamburgerMenu(getHamburger())
         };
         window.addEventListener("resize", onResize);
 
@@ -27,7 +27,7 @@ export const NavBar = () => {
     };
 
 
-    if (!isHamburgerMenu) {
+    if (!hamburgerMenu) {
         return (
             <nav>
                 <div className="eighty-width nav-container">
@@ -67,7 +67,7 @@ export const NavBar = () => {
         )
     }
 
-    if (isHamburgerMenu) {
+    if (hamburgerMenu) {
         return (
             <Fragment>
                 <nav>
