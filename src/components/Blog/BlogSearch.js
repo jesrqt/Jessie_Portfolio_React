@@ -35,7 +35,7 @@ export const BlogSearch = (props) => {
                     type="text"
                     minlength="2"
                     maxlength="20"
-                    placeholder="Search blogs by keywords"
+                    placeholder="Search by keywords"
                     ref={searchInputRef}
                 />
                 <button

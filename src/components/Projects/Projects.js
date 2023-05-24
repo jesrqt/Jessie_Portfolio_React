@@ -143,6 +143,57 @@ export const Projects = () => {
                                         </div>
                                     </div>
                                 </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className="card">
+                                        <div className="image-content">
+                                            <span className="overlay"></span>
+                                            <div className="card-image">
+                                                <img src="/image/Project_React_Form.webp"
+                                                    alt="Jessie created a Pokedex app using React" className="card-img" />
+                                            </div>
+                                        </div>
+                                        <div className="card-content">
+                                            <h3 className="project-name">React Form</h3>
+                                            <p className="project-description">React Form is an React app where users can submit their user name and age. The intake is then reflected directly below the form.
+                                                Through this project, Jessie learned how to develop a form for React applications.</p>
+                                            <button className="project-button">
+                                                <a href="https://github.com/jesrqt/React_Form"
+                                                    target="_blank"
+                                                    rel="noreferrer">
+                                                    <h4>Source Code</h4>
+                                                    <FiGithub className="github-icon" />
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className="card">
+                                        <div className="image-content">
+                                            <span className="overlay"></span>
+                                            <div className="card-image">
+                                                <img src="/image/Project_Purrcolator.webp"
+                                                    alt="Jessie created a Pokedex app using React" className="card-img" />
+                                            </div>
+                                        </div>
+                                        <div className="card-content">
+                                            <h3 className="project-name">Purrcolator</h3>
+                                            <p className="project-description">Puurcolator is an imaginary cat cafe. 
+                                            Throught this project, Jessie learned to develop a static website using HTML, CSS, and Javascript.</p>
+                                            <button className="project-button">
+                                                <a href="https://github.com/jesrqt/Purrcolator"
+                                                    target="_blank"
+                                                    rel="noreferrer">
+                                                    <h4>Source Code</h4>
+                                                    <FiGithub className="github-icon" />
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+
                             </Swiper>
                         </div>
                     </div>
