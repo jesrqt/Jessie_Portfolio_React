@@ -73,7 +73,7 @@ nav li:not(:last-child) {
   transform: translateY(-150%);
   transition: transform 0.4s ease-in-out;
   z-index: 99;
-  background: RGBA(26, 138, 227, 0.7);
+  background: rgba(26, 138, 227, 0.8);
   color: #fff;
   line-height: 2;
   list-style: none;
