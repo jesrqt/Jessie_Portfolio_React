@@ -1,8 +1,8 @@
 /* Nav */
 nav {
-  background-color: #fff;
+  background-color: var(--pink);
   z-index: 100;
-  height: 4.5rem;
+  height: 3rem;
   position: fixed;
   top: 0;
   display: flex;
@@ -20,6 +20,7 @@ nav {
 nav #logo {
   font-family: 'Inconsolata', monospace;
   font-size: 1.5rem;
+  color: var(--dark-blue)
 }
 
 nav ul {

@@ -1,4 +1,5 @@
 import ReactCardFlip from 'react-card-flip';
+import { motion } from 'framer-motion';
 import './SkillCard.css';
 
 export const SkillCard = (props) => {
@@ -12,21 +13,24 @@ export const SkillCard = (props) => {
     };
 
 
+
     return (
         <ReactCardFlip
             isFlipped={props.flipped === props.id ? true : false}
             flipDirection="horizontal"
         >
-            <div
+            <motion.div
                 onClick={flipBack}
                 className={props.divClassName}
+                whileInView={{ scale: [0, 1] }}
+                transition={{ delay: 0.5, duration: 1 }}
             >
                 <img
                     className={props.imgClassName}
                     id={props.imgId}
                     src={props.imgSrc}
                     alt={props.imgAlt} />
-            </div>
+            </motion.div>
             <div
                 onClick={flipFront}
                 className={`${props.divClassName} ${props.flipped === props.id && "flipped"}`}

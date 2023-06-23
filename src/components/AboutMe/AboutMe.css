@@ -1,6 +1,17 @@
 /* About Me */
+.about-me-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me-height {
+  height: 60vh;
+}
+
 #about-me {
-  margin-top: 5rem;
+  padding-top: 5rem;
+  background-color: var(--pale-blue);
 }
 
 .about-me-section {

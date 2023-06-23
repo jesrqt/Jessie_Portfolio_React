@@ -1,120 +1,128 @@
 /* Hero */
-main {
-    display: flex;
-    justify-content: center;
-    margin-top: 4.5rem;
-  }
-  
+#home {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--blue);
+}
+
+.hero-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-description {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+main h1 {
+  margin-top: 3rem;
+  line-height: 0.8;
+  font-weight: 700;
+  letter-spacing: -8px;
+}
+
+main h1 .jessie-h1 {
+  font-size: 9rem;
+}
+
+main h1 .developer-h1 {
+  font-size: 8rem;
+
+}
+
+main h1 .the-h1 {
+  font-size: 6rem;
+}
+
+main p {
+  line-height: 1.5;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  max-width: 30rem;
+}
+
+main .scroll-down-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+main .scroll-down {
+  font-size: 2rem;
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.jessie-image-container {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+.jessie-image {
+  width: auto;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-decoration1 {
+  position: absolute;
+  right: 20vw;
+  top: 40vh;
+  width: 100%;
+
+}
+
+.hero-decoration2 {
+  position: absolute;
+  left: 15vw;
+  width: 100%;
+  transform: rotate(40deg);
+}
+
+
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
   .hero-container {
-    margin-top: 4rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
   }
-  
+
   .hero-description {
-    width: 50%;
+    width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
+    text-align: center;
   }
-  
-  main h1 span {
-    color: var(--orange);
-  }
-  
-  main p {
-    line-height: 1.5;
-    margin: 2rem 0;
-  }
-  
+
   .jessie-image {
-    width: 50%;
-    height: auto;
-    background-image: url("/public/image/Jessie_Hero.webp ");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    height: 400px;
+    width: auto;
   }
-  
-  .github-button {
-    background-color: var(--orange);
-    width: 18rem;
-    height: 3rem;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 15px 10px rgba(251, 200, 33, 0.5);
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-  
-  .github-button a {
-    text-decoration: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .hero-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column-reverse;
   }
-  
-  .github-button h4 {
-    color: #fff;
-    font-weight: 600;
-    margin: 0;
-    padding: 0 1rem;
+
+  .hero-description {
+    width: 100%;
+    height: auto;
+    text-align: center;
   }
-  
-  .github-icon {
-    color: #fff;
-    font-size: 2rem;
-    margin: 0;
-    padding-right: 1rem;
+
+  .jessie-image {
+    width: auto;
+    height: 350px;
   }
-  
-  .github-button:hover {
-    background-color: var(--blue);
-    box-shadow: 0 15px 10px rgba(26, 138, 227, 0.5);
-  }
-  
-  .github-button:active {
-    position: relative;
-    top: 10px;
-    box-shadow: 0 5px 10px rgba(26, 138, 227, 0.5);
-  }
-  
-  @media only screen and (min-width: 760px) and (max-width: 1000px) {
-    .hero-container {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-  
-    .hero-description {
-      width: 100%;
-      height: auto;
-      text-align: center;
-    }
-  
-    .jessie-image {
-      height: 400px;
-      width: auto;
-    }
-  }
-  
-  @media only screen and (max-width: 760px) {
-    .hero-container {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-  
-    .hero-description {
-      width: 100%;
-      height: auto;
-      text-align: center;
-    }
-  
-    .jessie-image {
-      width: auto;
-      height: 350px;
-    }
-    .github-button i {
-      font-size: 2rem;
-    }
-  }
-  
+
+}

@@ -1,6 +1,7 @@
 /* Education & Experience */
 #experience {
     margin-top: 5rem;
+    min-height: 100vh;
 }
 
 .timeline-section {
