@@ -45,7 +45,8 @@ main p {
   line-height: 1.5;
   margin: 2rem 0;
   font-size: 1.5rem;
-  max-width: 30rem;
+  max-width: 35rem;
+  padding-left: 0.5rem;
 }
 
 main .scroll-down-container {
