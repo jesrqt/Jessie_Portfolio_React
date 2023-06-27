@@ -34,7 +34,7 @@ nav ul li {
 nav a {
   text-decoration: none;
   color: var(--primary-color);
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   cursor: pointer;
 }
 

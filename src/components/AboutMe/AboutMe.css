@@ -1,85 +1,96 @@
 /* About Me */
 .about-me-wrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.about-me-height {
-  height: 60vh;
-}
-
-#about-me {
-  padding-top: 5rem;
-  background-color: var(--pale-blue);
-}
-
-.about-me-section {
-  display: flex;
-  justify-content: center;
-}
-
-.jessie-img-about-me {
-  background-image: url("/public/image/Jessie_about_me_image.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 30%;
-}
-
-.about-me-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.self-desc {
-  width: 70%;
-  min-height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 50px;
-  margin-left: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: var(--pale-blue);
 }
 
-.self-desc p {
-  line-height: 2;
+.about-me-h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding-top: 3rem;
+  width: 100%;
+  height: 100px;
 }
 
-@media only screen and (max-width: 1000px) {
-  .about-me-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .jessie-img-about-me {
-    width: 200px;
-    height: 200px;
-    z-index: 2;
-  }
-
-  .self-desc {
-    position: relative;
-    top: -3rem;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .self-desc p {
-    text-align: center;
-    padding: 2rem 3rem 1rem 3rem;
-    line-height: 1.5;
-  }
-
-  .about-me-button {
-    margin: 0 0 2rem 0;
-    width: 
-  }
+.about-me-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
+
+.about-me-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.about-me-expansion {
+  font-size: 2rem;
+}
+
+.about-me-rotate {
+  transform: rotate(180deg);
+}
+
+.about-me-icon {
+  font-size: 2.5rem;
+  color: var(--dark-blue);
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-p {
+  font-size: 1.3rem;
+}
+
+.about-me-accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.about-me-card {
+  width: 100%;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 15px rgba(165, 229, 226, 0.5);
+}
+
+.about-me-card1 { 
+  background-color: var(--pink);
+ } 
+
+ .about-me-card2 { 
+  background-color: var(--yellow);
+ }
+
+ .about-me-card3 { 
+  background-color: var(--blue);
+ }
+
+ .about-me-card4 { 
+  background-color: var(--green);
+ }
+
+ .about-me-card5 { 
+  background-color: var(--pink);
+ }
