@@ -57,7 +57,6 @@ export const Skills = () => {
                                     >{item.title}
                                     </motion.li>
                                 )
-
                             })}
                         </ul>
                     </div>

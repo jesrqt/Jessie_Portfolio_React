@@ -16,6 +16,7 @@
   width: 50%;
   height: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   z-index: 10;
@@ -34,7 +35,6 @@ main h1 .jessie-h1 {
 
 main h1 .developer-h1 {
   font-size: 8rem;
-
 }
 
 main h1 .the-h1 {
@@ -50,28 +50,44 @@ main p {
 }
 
 main .scroll-down-container {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 main .scroll-down {
-  font-size: 2rem;
-  color: var(--dark-blue);
   cursor: pointer;
+}
+
+main .scroll-down-mouse {
+  width: 24px;
+  height: 38px;
+  border-radius: 18px;
+  border: 1px solid var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+main .scroll-down-mouse-ball {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--dark-blue);
 }
 
 .jessie-image-container {
   width: 50%;
   height: auto;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .jessie-image {
   width: auto;
   height: 100%;
   position: relative;
-  z-index: 10;
 }
 
 .hero-decoration1 {
@@ -79,7 +95,6 @@ main .scroll-down {
   right: 20vw;
   top: 40vh;
   width: 100%;
-
 }
 
 .hero-decoration2 {
@@ -89,41 +104,145 @@ main .scroll-down {
   transform: rotate(40deg);
 }
 
-
-
-@media only screen and (min-width: 760px) and (max-width: 1000px) {
-  .hero-container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .hero-description {
-    width: 100%;
-    height: auto;
-    text-align: center;
+@media only screen and (min-width: 1000px) and (max-width: 1345px) {
+  .hero-desc-container {
+    z-index: 100;
   }
 
   .jessie-image {
-    height: 400px;
-    width: auto;
+    width: 550px;
+    height: auto;
+  }
+
+  .hero-decoration2 {
+    position: absolute;
+    left: 20vw;
+    top: 10vh;
+  }
+
+}
+
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+
+  .hero-desc-container {
+    z-index: 100;
+  }
+
+  .jessie-image {
+    width: 450px;
+    height: auto;
+    right: 2rem;
+  }
+
+  .hero-decoration2 {
+    position: absolute;
+    left: 20vw;
+    top: 10vh;
+  }
+
+  main h1 .jessie-h1 {
+    font-size: 6rem;
+  }
+
+  main h1 .developer-h1 {
+    font-size: 5rem;
+  }
+
+  main h1 .the-h1 {
+    font-size: 4rem;
+  }
+
+  main p {
+    font-size: 1.2rem;
   }
 }
 
 @media only screen and (max-width: 760px) {
   .hero-container {
-    display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .hero-description {
-    width: 100%;
-    height: auto;
     text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  main h1 .jessie-h1 {
+    font-size: 6rem;
+  }
+
+  main h1 .developer-h1 {
+    font-size: 5.5rem;
+  }
+
+  main h1 .the-h1 {
+    font-size: 5rem;
+  }
+
+  main p {
+    line-height: 1.2;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    max-width: 35rem;
+    padding-left: 0.5rem;
+  }
+
+  .jessie-image-container {
+    position: relative;
   }
 
   .jessie-image {
+    height: 450px;
     width: auto;
-    height: 350px;
+    position: absolute;
+    top: -700px;
   }
 
+  .hero-decoration1 {
+    position: absolute;
+    top: -400px;
+  }
+
+  .hero-decoration2 {
+    position: absolute;
+    top: -700px;
+    left: 150px;
+  }
+
+
+}
+
+@media only screen and (max-width: 560px) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-description {
+    text-align: center;
+  }
+
+  .jessie-image-container {
+    position: initial;
+  }
+
+  .jessie-image {
+    position: initial;
+    display: none;
+  }
+
+  .hero-decoration1 {
+    position: absolute;
+    top: 65vh;
+    right: 40vw;
+  }
+
+  .hero-decoration2 {
+    position: absolute;
+    top: 0;
+    left: 40vw;
+  }
 }

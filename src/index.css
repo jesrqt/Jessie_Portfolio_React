@@ -81,7 +81,7 @@ body {
 }
 
 .boxshadow {
-  box-shadow: 0 0 15px 5px rgba(121, 121, 121, 0.2);
+  box-shadow: 0 0 5px 5px rgba(185, 185, 185, 0.2);
 }
 
 /* h2 titles to be kept within a div */
@@ -112,14 +112,14 @@ body {
     width: auto;
     /* margin: 6rem 0 2rem 0; */
   }
+
+  .eighty-width {
+    width: 90%;
+  }
 }
 
 /* Media Query - 760px */
 @media only screen and (max-width: 760px) {
-  .eighty-width {
-    width: 90%;
-  }
-
   .basic-button {
     margin-top: 0;
   }

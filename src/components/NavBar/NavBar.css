@@ -29,22 +29,24 @@ nav ul {
 
 nav ul li {
   list-style: none;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
 }
 
 nav a {
   text-decoration: none;
   color: var(--primary-color);
-  font-family: 'Ubuntu', sans-serif;
+  
   cursor: pointer;
 }
 
 nav .nav-link {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   font-size: 1.1rem;
 }
 
 nav .nav-link:hover {
-  color: var(--blue);
+  font-weight: 600;
 }
 
 nav li:not(:last-child) {
@@ -70,35 +72,34 @@ nav li:not(:last-child) {
 
 .menu {
   position: fixed;
-  right: 10%;
-  transform: translateY(-150%);
+  top: 3rem;
+  right: 0;
+  transform: translateX(150%);
   transition: transform 0.4s ease-in-out;
   z-index: 99;
-  background: rgba(26, 138, 227, 0.8);
-  color: #fff;
+  background-color: rgba(252, 229, 212, 0.7);
   line-height: 2;
   list-style: none;
   margin: 0;
-  margin-top: 1rem;
   padding: 1rem;
-  text-align:end;
+  text-align:center;
   width: 30%;
-  border-radius: 25px;
+  height: 100%;
 }
 
 .showMenu {
-  transform: translateY(0);
+  transform: translateX(10%);
 }
 
 .menuItem {
   text-decoration: none;
-  color: #fff;
+  color: var(--dark-blue);
   font-size: 1.3rem;
   font-weight: 700;
 }
 
 .menuIcon, .closeIcon {
-  color: #fff;
+  color: var(--dark-blue);
   font-size: 1.2rem;
   font-weight: 700;
 }

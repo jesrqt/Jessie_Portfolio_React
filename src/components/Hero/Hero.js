@@ -1,5 +1,4 @@
 import React from 'react';
-import { BsChevronDoubleDown } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { HashLink } from 'react-router-hash-link';
 import './Hero.css';
@@ -80,18 +79,22 @@ export const Hero = () => {
                         </motion.p>
                         <motion.div
                             className='scroll-down-container'
-                            animate={{
-                                x: [-1000, -1000, -1000, -1000, -1000, -1000, -1000, -1000, -1000, -1000, -1000, -1000, 0, 0, 0, 0, 0, 0],
-                                scale: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.5, 1, 1.5, 1, 1.5, 1],
-                            }}
-                            transition={{ duration: 9 }}
-                            whileHover={{ scale: 1.5, transition: { duration: 0.2 } }}
+                            initial={{ opacity: 0, y: -10}}
+                            animate={{opacity: 1, y: 0}}
+                            transition={{delay: 6, duration: 1}}
                         >
                             <HashLink
                                 className='scroll-down'
                                 smooth to="/#about-me"
                             >
-                                <BsChevronDoubleDown />
+                                <div className='scroll-down-mouse'>
+                                    <motion.div
+                                    className='scroll-down-mouse-ball'
+                                    animate={{y: [5, 26, 5]}}
+                                    transition={{duration: 3,
+                                    repeat: Infinity,
+                                    repeatType: 'loop'}} />
+                                </div>
                             </HashLink>
                         </motion.div>
                     </div>

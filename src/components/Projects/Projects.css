@@ -1,6 +1,19 @@
 /* Project Section */
 #projects {
-    margin-top: 5rem;
+    padding-top: 2rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue);
+}
+
+.project-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-section {
@@ -8,11 +21,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
+.slide-container {
+    width: 100%;
+    border-radius: 15px;
+    background-color: #fff;
+}
 
 .slide-content {
     margin: 0 80px;
+    
 }
 
 .card-wrapper {
@@ -27,7 +47,7 @@
     width: auto;
     border-radius: 30px;
     background-color: #fff;
-    border: solid 3px var(--blue);
+    border: solid 3px var(--yellow);
 }
 
 .image-content,
@@ -50,7 +70,7 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--blue);
+    background-color: var(--yellow);
     border-radius: 25px 25px 0 25px;
 }
 
@@ -62,7 +82,7 @@
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: var(--blue);
+    background-color: var(--yellow);
 }
 
 .overlay::after {
@@ -93,7 +113,7 @@
 
 .project-name {
     font-weight: 500;
-    color: var(--primary-color);
+    color: var(--dark-blue);
     margin: 1rem 0;
 }
 
@@ -108,10 +128,9 @@
 .project-button {
     width: 200px;
     height: 3rem;
-    background-color: var(--orange);
-    border: none;
+    background-color: #fff;
+    border: solid 2px var(--yellow);
     border-radius: 20px;
-    box-shadow: 0 15px 10px rgba(251, 200, 33, 0.5);
     cursor: pointer;
     transition: all 0.3s;
     margin: 1rem 0;
@@ -125,16 +144,16 @@
 }
 
 .project-button h4 {
-    color: #fff;
-    font-size: 1.1rem;
+    color: var(--dark-blue);
+    font-size: 1rem;
     font-weight: 600;
     margin: 0;
     padding: 0 1rem;
 }
 
 .github-icon {
-    color: #fff;
-    font-size: 2rem;
+    color: var(--dark-blue);
+    font-size: 1.8rem;
     margin: 0;
     padding-right: 1rem;
 }
@@ -203,6 +222,7 @@
         height: 3rem;
         margin: 0.5rem 0;
     }
+
     .github-icon {
         font-size: 1.3rem;
     }
