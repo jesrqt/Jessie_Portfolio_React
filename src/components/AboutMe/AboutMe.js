@@ -14,6 +14,7 @@ export const AboutMe = () => {
 
     return (
         <section className='about-me-wrapper'>
+            <div className='eighty-width'>
             <h2 className='about-me-h2'>Why Will Jessie Benefit Your Team?</h2>
             <motion.div
                 className='about-me-accordion'
@@ -39,6 +40,7 @@ export const AboutMe = () => {
                     )
                 })}
             </motion.div>
+            </div>
         </section>
     )
 }
