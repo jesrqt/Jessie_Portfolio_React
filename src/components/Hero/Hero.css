@@ -1,120 +1,248 @@
 /* Hero */
-main {
-    display: flex;
-    justify-content: center;
-    margin-top: 4.5rem;
+#home {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--blue);
+}
+
+.hero-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-description {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+main h1 {
+  margin-top: 3rem;
+  line-height: 0.8;
+  font-weight: 700;
+  letter-spacing: -8px;
+}
+
+main h1 .jessie-h1 {
+  font-size: 9rem;
+}
+
+main h1 .developer-h1 {
+  font-size: 8rem;
+}
+
+main h1 .the-h1 {
+  font-size: 6rem;
+}
+
+main p {
+  line-height: 1.5;
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  max-width: 35rem;
+  padding-left: 0.5rem;
+}
+
+main .scroll-down-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main .scroll-down {
+  cursor: pointer;
+}
+
+main .scroll-down-mouse {
+  width: 24px;
+  height: 38px;
+  border-radius: 18px;
+  border: 1px solid var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .scroll-down-mouse-ball {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--dark-blue);
+}
+
+.jessie-image-container {
+  width: 50%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.jessie-image {
+  width: auto;
+  height: 100%;
+  position: relative;
+}
+
+.hero-decoration1 {
+  position: absolute;
+  right: 20vw;
+  top: 40vh;
+  width: 100%;
+}
+
+.hero-decoration2 {
+  position: absolute;
+  left: 15vw;
+  width: 100%;
+  transform: rotate(40deg);
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1345px) {
+  .hero-desc-container {
+    z-index: 100;
   }
-  
-  .hero-container {
-    margin-top: 4rem;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .hero-description {
-    width: 50%;
-    height: auto;
-    display: flex;
-    align-items: center;
-  }
-  
-  main h1 span {
-    color: var(--orange);
-  }
-  
-  main p {
-    line-height: 1.5;
-    margin: 2rem 0;
-  }
-  
+
   .jessie-image {
-    width: 50%;
+    width: 550px;
     height: auto;
-    background-image: url("/public/image/Jessie_Hero.webp ");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
-  
-  .github-button {
-    background-color: var(--orange);
-    width: 18rem;
-    height: 3rem;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 15px 10px rgba(251, 200, 33, 0.5);
-    cursor: pointer;
-    transition: all 0.3s;
+
+  .hero-decoration2 {
+    position: absolute;
+    left: 20vw;
+    top: 10vh;
   }
-  
-  .github-button a {
-    text-decoration: none;
-    display: flex;
+
+}
+
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+
+  .hero-desc-container {
+    z-index: 100;
+  }
+
+  .jessie-image {
+    width: 450px;
+    height: auto;
+    right: 2rem;
+  }
+
+  .hero-decoration2 {
+    position: absolute;
+    left: 20vw;
+    top: 10vh;
+  }
+
+  main h1 .jessie-h1 {
+    font-size: 6rem;
+  }
+
+  main h1 .developer-h1 {
+    font-size: 5rem;
+  }
+
+  main h1 .the-h1 {
+    font-size: 4rem;
+  }
+
+  main p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .hero-container {
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
+  }
+
+  .hero-description {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  main h1 .jessie-h1 {
+    font-size: 6rem;
+  }
+
+  main h1 .developer-h1 {
+    font-size: 5.5rem;
+  }
+
+  main h1 .the-h1 {
+    font-size: 5rem;
+  }
+
+  main p {
+    line-height: 1.2;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    max-width: 35rem;
+    padding-left: 0.5rem;
+  }
+
+  .jessie-image-container {
+    position: relative;
+  }
+
+  .jessie-image {
+    height: 450px;
+    width: auto;
+    position: absolute;
+    top: -700px;
+  }
+
+  .hero-decoration1 {
+    position: absolute;
+    top: -400px;
+  }
+
+  .hero-decoration2 {
+    position: absolute;
+    top: -700px;
+    left: 150px;
+  }
+
+
+}
+
+@media only screen and (max-width: 560px) {
+  .hero-container {
+    flex-direction: column;
     justify-content: center;
   }
-  
-  .github-button h4 {
-    color: #fff;
-    font-weight: 600;
-    margin: 0;
-    padding: 0 1rem;
+
+  .hero-description {
+    text-align: center;
   }
-  
-  .github-icon {
-    color: #fff;
-    font-size: 2rem;
-    margin: 0;
-    padding-right: 1rem;
+
+  .jessie-image-container {
+    position: initial;
   }
-  
-  .github-button:hover {
-    background-color: var(--blue);
-    box-shadow: 0 15px 10px rgba(26, 138, 227, 0.5);
+
+  .jessie-image {
+    position: initial;
+    display: none;
   }
-  
-  .github-button:active {
-    position: relative;
-    top: 10px;
-    box-shadow: 0 5px 10px rgba(26, 138, 227, 0.5);
+
+  .hero-decoration1 {
+    position: absolute;
+    top: 65vh;
+    right: 40vw;
   }
-  
-  @media only screen and (min-width: 760px) and (max-width: 1000px) {
-    .hero-container {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-  
-    .hero-description {
-      width: 100%;
-      height: auto;
-      text-align: center;
-    }
-  
-    .jessie-image {
-      height: 400px;
-      width: auto;
-    }
+
+  .hero-decoration2 {
+    position: absolute;
+    top: 0;
+    left: 40vw;
   }
-  
-  @media only screen and (max-width: 760px) {
-    .hero-container {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-  
-    .hero-description {
-      width: 100%;
-      height: auto;
-      text-align: center;
-    }
-  
-    .jessie-image {
-      width: auto;
-      height: 350px;
-    }
-    .github-button i {
-      font-size: 2rem;
-    }
-  }
-  
+}

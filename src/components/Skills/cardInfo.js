@@ -1,9 +1,5 @@
 export const cardInfo = [
     {
-        id: "1",
-        divClassName: "boxshadow skills",
-        onClick: "htmlClickHandler",
-        imgClassName: "skill-logo",
         imgId: "html-logo",
         imgSrc: "/image/Logo_HTML.webp",
         imgAlt: "HTML5 logo",
@@ -14,10 +10,6 @@ export const cardInfo = [
         ],
     },
     {
-        id: "2",
-        divClassName: "boxshadow skills",
-        onClick: "cssClickHandler",
-        imgClassName: "skill-logo",
         imgId: "css-logo",
         imgSrc: "/image/Logo_CSS.webp",
         imgAlt: "CSS logo",
@@ -29,10 +21,6 @@ export const cardInfo = [
         ],
     },
     {
-        id: "3",
-        divClassName: "boxshadow skills",
-        onClick: "jsClickHandler",
-        imgClassName: "skill-logo",
         imgId: "js-logo",
         imgSrc: "/image/Logo_JavaScript.webp",
         imgAlt: "Javascript logo",
@@ -46,10 +34,19 @@ export const cardInfo = [
         ],
     },
     {
-        id: "4",
-        divClassName: "boxshadow skills",
-        onClick: "reactClickHandler",
-        imgClassName: "skill-logo",
+        imgId: "ts-logo",
+        imgSrc: "/image/Logo_TypeScript.webp",
+        imgAlt: "TypeScript logo",
+        skillDesc: [
+            "use JavaScript to store and manipulate various types of data",
+            "create complex programs using arrays, loops, objects, and iterators",
+            "add interactive experiences to a website",
+            "implement classes, modules, and error handling",
+            "understand testing methodologies, such as TDD, using Mocha",
+            "connect to API to manupulate data on remote servers"
+        ],
+    },
+    {
         imgId: "react-logo",
         imgSrc: "/image/Logo_React.webp",
         imgAlt: "React logo",
@@ -61,10 +58,6 @@ export const cardInfo = [
         ],
     },
     {
-        id: "5",
-        divClassName: "boxshadow skills",
-        onClick: "reduxClickHandler",
-        imgClassName: "skill-logo",
         imgId: "redux-logo",
         imgSrc: "/image/Logo_Redux.webp",
         imgAlt: "Redux logo",
@@ -75,10 +68,6 @@ export const cardInfo = [
         ],
     },
     {
-        id: "6",
-        divClassName: "boxshadow skills",
-        onClick: "gitClickHandler",
-        imgClassName: "skill-logo",
         imgId: "git-logo",
         imgSrc: "/image/Logo_Git.webp",
         imgAlt: "Git logo",

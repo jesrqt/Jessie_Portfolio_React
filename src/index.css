@@ -1,4 +1,11 @@
 /* Universal style */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Fonts details 
+font-family: 'Archivo', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
 
 body,
 html {
@@ -9,11 +16,14 @@ html {
 }
 
 :root {
-  --primary-color: #183153;
-  --yellow: #FBC821;
-  --orange: #FCAC1E;
-  --blue: #1A8AE3;
-  --font: sans-serif;
+  --blue: #dbedec;
+  --pink: #fce5d4;
+  --pale-blue: #e6efee;
+  --dark-blue: #2a3e52;
+  --beige: #f1cfb2;
+  --green: #c4dea5;
+  --dark-green: #5ba500;
+  --yellow: #f7dc86;
 }
 
 h1,
@@ -22,8 +32,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Ubuntu', sans-serif;
-  color: var(--primary-color);
+  font-family: 'Archivo', sans-serif;;
+  color: var(--dark-blue);
 }
 
 h1 {
@@ -46,13 +56,13 @@ h4 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
-  color: var(--primary-color);
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--dark-blue);
   font-size: 1rem;
 }
 
 ul {
-  color: var(--primary-color);
+  color: var(--dark-blue);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -71,8 +81,7 @@ body {
 }
 
 .boxshadow {
-  box-shadow: 0 0 15px 5px rgba(121, 121, 121, 0.2);
-  border-radius: 30px;
+  box-shadow: 0 0 5px 5px rgba(185, 185, 185, 0.2);
 }
 
 /* h2 titles to be kept within a div */
@@ -103,14 +112,14 @@ body {
     width: auto;
     /* margin: 6rem 0 2rem 0; */
   }
+
+  .eighty-width {
+    width: 90%;
+  }
 }
 
 /* Media Query - 760px */
 @media only screen and (max-width: 760px) {
-  .eighty-width {
-    width: 90%;
-  }
-
   .basic-button {
     margin-top: 0;
   }

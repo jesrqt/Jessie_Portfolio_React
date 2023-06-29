@@ -1,4 +1,3 @@
-import './App.css';
 import { Root } from './components/Root/Root';
 import { HomePage } from './components/HomePage/HomePage';
 import { BlogList } from './components/Blog/BlogList';
