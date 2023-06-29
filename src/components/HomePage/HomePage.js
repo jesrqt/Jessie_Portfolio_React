@@ -11,9 +11,7 @@ export const HomePage = () => {
     return (
         <Fragment>
             <Hero />
-            <section id="about-me">
-                <AboutMe />
-            </section>
+            <AboutMe />
             <Skills />
             <Experience />
             <Projects />
