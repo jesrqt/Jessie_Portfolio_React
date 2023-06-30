@@ -1,16 +1,19 @@
 /* About Me */
 .about-me-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100% ;
   min-height: 100vh;
   height: auto;
   background-color: var(--pale-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-me-container {
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-me-h2 {
@@ -38,6 +41,7 @@
 .about-me-title-wrapper h3 {
   font-size: 1.6rem;
   font-weight: 500;
+  flex-wrap: wrap;
 }
 
 .about-me-expansion {
@@ -74,11 +78,13 @@
 }
 
 .about-me-card {
+  box-sizing: border-box;
   width: 100%;
   border-radius: 10px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-shadow: 0 0 15px rgba(165, 229, 226, 0.5);
   z-index: 10;
 }
@@ -108,6 +114,15 @@
     font-size: 1.3rem;
     font-weight: 500;
   }
+
+  .about-me-p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .about-me-expansion {
+    font-size: 1.5rem;
+  }
  }
 
  @media only screen and (max-width: 760px) {
@@ -115,11 +130,19 @@
     font-size: 1.2rem;
     font-weight: 500;
   }
+
+  .about-me-expansion {
+    font-size: 1.3rem;
+  }
  }
 
  @media only screen and (max-width: 560px) {
   .about-me-title-wrapper h3 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 500;
+  }
+
+  .about-me-expansion {
+    font-size: 1rem;
   }
  }
