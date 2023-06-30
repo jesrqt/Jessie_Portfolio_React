@@ -9,6 +9,10 @@
   background-color: var(--pale-blue);
 }
 
+.about-me-container {
+  z-index: 10;
+}
+
 .about-me-h2 {
   text-align: center;
   margin: 0;
@@ -35,7 +39,6 @@
   font-size: 1.6rem;
   font-weight: 500;
 }
-
 
 .about-me-expansion {
   font-size: 2rem;
