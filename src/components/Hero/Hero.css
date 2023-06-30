@@ -22,6 +22,12 @@
   z-index: 10;
 }
 
+.hero-desc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 main h1 {
   margin-top: 3rem;
   line-height: 0.8;
@@ -106,7 +112,7 @@ main .scroll-down-mouse-ball {
 
 @media only screen and (min-width: 1000px) and (max-width: 1345px) {
   .hero-desc-container {
-    z-index: 100;
+    width: 100%;
   }
 
   .jessie-image {
@@ -124,11 +130,6 @@ main .scroll-down-mouse-ball {
 
 
 @media only screen and (min-width: 760px) and (max-width: 1000px) {
-
-  .hero-desc-container {
-    z-index: 100;
-  }
-
   .jessie-image {
     width: 450px;
     height: auto;
@@ -166,8 +167,13 @@ main .scroll-down-mouse-ball {
   }
 
   .hero-description {
+    width: 100%;
     text-align: center;
     padding-bottom: 2rem;
+  }
+
+  .hero-desc-container {
+    align-items: center;
   }
 
   main h1 .jessie-h1 {
@@ -184,10 +190,9 @@ main .scroll-down-mouse-ball {
 
   main p {
     line-height: 1.2;
-    margin: 2rem 0;
+    margin-top: 0;
     font-size: 1.2rem;
-    max-width: 35rem;
-    padding-left: 0.5rem;
+    padding-left: 0;
   }
 
   .jessie-image-container {
@@ -219,8 +224,31 @@ main .scroll-down-mouse-ball {
     justify-content: center;
   }
 
-  .hero-description {
-    text-align: center;
+  .hero-desc-container {
+    width: 100%;
+  }
+
+  main h1 {
+    letter-spacing: -6px;
+  }
+
+  main h1 .jessie-h1 {
+    font-size: 4rem;
+  }
+
+  main h1 .developer-h1 {
+    font-size: 3.5rem;
+  }
+
+  main h1 .the-h1 {
+    font-size: 3rem;
+  }
+
+  main p {
+    font-size: 1rem;
+    padding-left: 0;
+    width: 80%;
+    margin-top: 0;
   }
 
   .jessie-image-container {
@@ -244,3 +272,4 @@ main .scroll-down-mouse-ball {
     left: 40vw;
   }
 }
+

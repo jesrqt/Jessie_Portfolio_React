@@ -130,3 +130,9 @@ h2 {
   font-size: 1.8rem;
 }
 }
+
+@media only screen and (max-width: 400px) {
+  .eighty-width {
+    width: 95%;
+  }
+}
