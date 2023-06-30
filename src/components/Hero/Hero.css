@@ -88,7 +88,6 @@ main .scroll-down-mouse-ball {
   position: relative;
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 
 .jessie-image {
