@@ -1,4 +1,5 @@
 /* Hero */
+
 #home {
   display: flex;
   justify-content: center;
@@ -98,16 +99,25 @@ main .scroll-down-mouse-ball {
 
 .hero-decoration1 {
   position: absolute;
-  right: 20vw;
-  top: 40vh;
   width: 100%;
 }
 
 .hero-decoration2 {
   position: absolute;
-  left: 15vw;
   width: 100%;
   transform: rotate(40deg);
+}
+
+@media only screen and (min-width: 1345px) {
+  .hero-decoration1 {
+    right: 20vw;
+    top: 50vh;
+  }
+
+  .hero-decoration2 {
+    left: 15vw;
+  }
+
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1345px) {
@@ -120,12 +130,16 @@ main .scroll-down-mouse-ball {
     height: auto;
   }
 
+  .hero-decoration1 {
+    right: 20vw;
+    top: 50vh;
+  }
+
   .hero-decoration2 {
     position: absolute;
     left: 20vw;
     top: 10vh;
   }
-
 }
 
 
@@ -134,6 +148,11 @@ main .scroll-down-mouse-ball {
     width: 450px;
     height: auto;
     right: 2rem;
+  }
+
+  .hero-decoration1 {
+    right: 20vw;
+    top: 50vh;
   }
 
   .hero-decoration2 {
@@ -159,7 +178,7 @@ main .scroll-down-mouse-ball {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (min-width: 560px) and (max-width: 760px) {
   .hero-container {
     flex-direction: column;
     align-items: center;
@@ -221,11 +240,18 @@ main .scroll-down-mouse-ball {
 @media only screen and (max-width: 560px) {
   .hero-container {
     flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
 
-  .hero-desc-container {
+  .hero-description {
     width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .hero-desc-container {
+    align-items: center;
   }
 
   main h1 {
@@ -245,6 +271,7 @@ main .scroll-down-mouse-ball {
   }
 
   main p {
+    line-height: 1.2;
     font-size: 1rem;
     padding-left: 0;
     width: 80%;
@@ -252,24 +279,28 @@ main .scroll-down-mouse-ball {
   }
 
   .jessie-image-container {
-    position: initial;
+    position: relative;
+    width: 100%;
   }
 
   .jessie-image {
-    position: initial;
     display: none;
   }
 
   .hero-decoration1 {
     position: absolute;
-    top: 65vh;
-    right: 40vw;
+    right: 30vw;
   }
 
   .hero-decoration2 {
     position: absolute;
-    top: 0;
-    left: 40vw;
+    bottom: 40vh;
+    left: 30vw;
   }
 }
 
+@media only screen and (max-width: 560px) and (min-height: 800px) {
+  .hero-decoration1 {
+    bottom: -30vh;
+  }
+}
