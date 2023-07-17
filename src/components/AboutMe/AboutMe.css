@@ -34,7 +34,7 @@
 
 .about-me-title-wrapper {
   display: flex;
-  width: 90%;
+  width: 95%;
   align-items: center;
   gap: 1rem;
 }
@@ -135,7 +135,11 @@
 
  @media only screen and (max-width: 560px) {
   .about-me-title-wrapper h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
+  }
+
+  .about-me-expansion {
+    font-size: 1.3rem;
   }
  }
