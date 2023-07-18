@@ -11,14 +11,10 @@
 .experience-title-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 5rem 0 3rem 0;
     text-align: center;
-}
-
-.experience-title-container h2 {
-    font-size: 3rem;
-    width: 100%;
 }
 
 .vertical-timeline-element-date {
@@ -39,3 +35,29 @@
     box-shadow: none;
     box-shadow: 0 0 0 2px #2a3e52 !important;
 }
+
+.vertical-timeline-element-content li:not(:last-child) {
+    margin-bottom: 8px; 
+  }
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+    .vertical-timeline-element-content li {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media only screen and (min-width: 560px) and (max-width: 760px) {
+    .vertical-timeline-element-content li {
+        font-size: 1rem;
+      }
+  }
+  
+  @media only screen and (max-width: 560px) {
+    .vertical-timeline-element-content ul {
+        padding-inline-start: 0;
+      }
+
+    .vertical-timeline-element-content li {
+        font-size: 0.8rem;
+      }
+  }
