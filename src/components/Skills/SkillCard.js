@@ -68,7 +68,6 @@ export const SkillCard = (props) => {
                 <div className='skill-card-img-container'>
                     <img src={image} alt="logo of the programming language" />
                 </div>
-                <div className='skill-card-panel-right'></div>
             </div>
 
             <div className='skill-card-arrow-wrapper'>
