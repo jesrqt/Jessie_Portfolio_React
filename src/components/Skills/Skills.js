@@ -38,7 +38,7 @@ export const Skills = () => {
             <div className='eighty-width'>
             <div className='skill-container'>
                 <div className="skills-title">
-                    <h2>How Jessie Can Technically Contribute To Your Team</h2>
+                    <h2>How Can Jessie Technically Contribute To Your Team?</h2>
                 </div>
                 <ul className='skill-ul'>
                     {skillCardInfo.map((item, i) => {

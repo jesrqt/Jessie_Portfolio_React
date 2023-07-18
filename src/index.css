@@ -19,6 +19,7 @@ html {
 
 :root {
   --blue: #dbedec;
+  --blue2: #cae5e3;
   --pink: #fce5d4;
   --pale-blue: #e6efee;
   --dark-blue: #2a3e52;
@@ -127,7 +128,7 @@ body {
 /* Media Query - 500px */
 @media only screen and (max-width: 560px) {
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 }
 
