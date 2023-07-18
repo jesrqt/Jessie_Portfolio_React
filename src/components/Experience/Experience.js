@@ -9,7 +9,7 @@ export const Experience = () => {
         <section id='experience' >
             <div className='eighty-width'>
                 <div className='experience-title-container'>
-                    <h2>What Jessie Has Done So Far</h2>
+                    <h2>What Jessie Has Experienced So Far</h2>
                     <p>*Please request full details in person</p>
                 </div>
                 <VerticalTimeline

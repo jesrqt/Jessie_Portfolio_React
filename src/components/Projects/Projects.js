@@ -12,12 +12,12 @@ import "./styles.css";
 export const Projects = () => {
     return (
         <section id="projects">
-            <div className='project-container'>
+            <div className='eighty-width project-container'>
                 <div className="title project-title">
-                    <h2>Projects</h2>
+                    <h2>Take a Look At Jessie's Projects</h2>
                 </div>
                 <div className="project-section">
-                    <div className="boxshadow slide-container">
+                    <div className="slide-container">
                         <div className="slide-content">
                             <div className="card-wrapper">
                                 <Swiper
