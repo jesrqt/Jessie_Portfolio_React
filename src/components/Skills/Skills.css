@@ -163,7 +163,7 @@
   .skill-card-panel {
     flex-direction: column-reverse;
     gap: 1rem;
-    padding: 2rem 0;
+    padding: 2rem 2rem;
   }
 
   .skill-card-container {
@@ -184,7 +184,7 @@
   }
 
   .skill-card-left-content ul {
-    padding-right: 0.5rem;  
+    padding-inline-start: 0;
   }
 
   .skill-card-left-content li {

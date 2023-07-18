@@ -68,6 +68,7 @@
 
 .about-me-p {
   font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .about-me-accordion { 
@@ -141,5 +142,9 @@
 
   .about-me-expansion {
     font-size: 1.3rem;
+  }
+
+  .about-me-p {
+    font-size: 0.8rem;
   }
  }
