@@ -34,7 +34,7 @@ export const Projects = () => {
                                         slideShadows: false,
                                     }}
                                     pagination={true}
-                                    initialSlide={1}
+                                    initialSlide={0}
                                     modules={[EffectCoverflow, Pagination]}
                                     breakpoints={{
                                         450: {
