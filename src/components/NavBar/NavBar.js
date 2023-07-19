@@ -78,44 +78,44 @@ export const NavBar = () => {
                         onClick={toggleMenu}>
                             {!isMenuVisible
                                 ? <GiHamburgerMenu
-                                    className="menuIcon"
+                                    className="menu-icon"
                                 />
                                 : <GrClose
-                                    className="closeIcon"
+                                    className="close-icon"
                                 />
                             }
                         </button>
                     </div>
                 </nav>
 
-                <ul className={`menu ${isMenuVisible && "showMenu"}`}>
+                <ul className={`menu ${isMenuVisible && "show-menu"}`}>
                     <li>
                         <HashLink 
-                        className="menuItem" 
+                        className="menu-item" 
                         smooth to="/#home">Home</HashLink>
                     </li>
                     <li>
                         <HashLink 
-                        className="menuItem"
+                        className="menu-item"
                         smooth to="/#about-me">About Me</HashLink>
                     </li>
                     <li>
                         <HashLink
-                        className="menuItem"
+                        className="menu-item"
                         smooth to="/#skills">Skills</HashLink>
                     </li>
                     <li>
                         <HashLink 
-                        className="menuItem"
+                        className="menu-item"
                         smooth to="/#experience">Experience</HashLink>
                     </li>
                     <li>
                         <HashLink 
-                        className="menuItem"
+                        className="menu-item"
                         smooth to="/#projects">Projects</HashLink>
                     </li>
                     <li>
-                        <NavLink className="menuItem" to="/blog">Blog</NavLink>
+                        <NavLink className="menu-item" to="/blog">Blog</NavLink>
                     </li>
                 </ul>
             </Fragment>
