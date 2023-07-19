@@ -14,7 +14,7 @@ export const Projects = () => {
         <section id="projects">
             <div className='eighty-width project-container'>
                 <div className="title project-title">
-                    <h2>Take a Look At Jessie's Projects</h2>
+                    <h2>Take A Look At Jessie's Projects</h2>
                 </div>
                 <div className="project-section">
                     <div className="slide-container">
